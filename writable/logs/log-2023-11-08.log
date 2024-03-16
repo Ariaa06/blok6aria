@@ -1,0 +1,28 @@
+CRITICAL - 2023-11-08 01:26:34 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 287.
+ 1 APPPATH\Controllers\Home.php(287): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\lelang\\app\\Controllers\\Home.php', 287)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->fpw()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-08 01:36:23 --> Invalid file: "laporanm.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporanm.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('laporanm', [], true)
+ 3 APPPATH\Controllers\Home.php(578): view('laporanm')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->laporan()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-08 01:36:53 --> Invalid file: "laporan.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('laporan.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('laporan', [], true)
+ 3 APPPATH\Controllers\Home.php(578): view('laporan')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->laporan()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')

@@ -1,0 +1,254 @@
+ERROR - 2023-11-02 10:38:43 --> mysqli_sql_exception: Unknown column 'id_brg' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 10:38:43 --> Unknown column 'id_brg' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+ORDER BY `id_brg` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 10:39:10 --> mysqli_sql_exception: Unknown column 'id_brg' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 10:39:10 --> Unknown column 'id_brg' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+ORDER BY `id_brg` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 10:39:11 --> mysqli_sql_exception: Unknown column 'id_brg' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 10:39:11 --> Unknown column 'id_brg' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+ORDER BY `id_brg` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 10:39:11 --> mysqli_sql_exception: Unknown column 'id_brg' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 10:39:11 --> Unknown column 'id_brg' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+ORDER BY `id_brg` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 10:39:16 --> mysqli_sql_exception: Unknown column 'id_brg' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 10:39:16 --> Unknown column 'id_brg' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `barang`
+ORDER BY `id_brg` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(11): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang', 'id_brg')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-02 10:40:00 --> Undefined variable $manda
+in APPPATH\Views\barang.php on line 34.
+ 1 APPPATH\Views\barang.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $manda', 'C:\\lelang\\app\\Views\\barang.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\lelang\\app\\Views\\barang.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('barang', [], true)
+ 5 APPPATH\Controllers\Home.php(78): view('barang')
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-02 10:43:11 --> Too few arguments to function App\Models\M_lelang::tampil(), 1 passed in C:\lelang\app\Controllers\Home.php on line 75 and exactly 2 expected
+in APPPATH\Models\M_lelang.php on line 8.
+ 1 APPPATH\Controllers\Home.php(75): App\Models\M_lelang->tampil('barang')
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->barang()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-02 10:54:27 --> Undefined variable $data
+in APPPATH\Controllers\Home.php on line 89.
+ 1 APPPATH\Controllers\Home.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\lelang\\app\\Controllers\\Home.php', 89)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->tambah_barang()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 11:01:10 --> mysqli_sql_exception: Unknown column 'deskripsi' in 'field list' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\lelang\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\lelang\app\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', Array)
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 11:01:10 --> Unknown column 'deskripsi' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `tgl`, `harga_awal`, `deskripsi`) VALUES (:nama_barang:, :tgl:, :harga_awal:, :deskripsi:)', [...], false)
+ 2 APPPATH\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 11:01:54 --> mysqli_sql_exception: Column 'nama_barang' cannot be null in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\lelang\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\lelang\app\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', Array)
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 11:01:54 --> Column 'nama_barang' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `tgl`, `harga_awal`, `deskripsi_barang`) VALUES (:nama_barang:, :tgl:, :harga_awal:, :deskripsi_barang:)', [...], false)
+ 2 APPPATH\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 11:06:58 --> mysqli_sql_exception: Column 'nama_barang' cannot be null in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\lelang\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\lelang\app\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', Array)
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 11:06:58 --> Column 'nama_barang' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `tgl`, `harga_awal`, `deskripsi_barang`) VALUES (:nama_barang:, :tgl:, :harga_awal:, :deskripsi_barang:)', [...], false)
+ 2 APPPATH\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-02 11:07:01 --> mysqli_sql_exception: Column 'nama_barang' cannot be null in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\lelang\system\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\lelang\app\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', Array)
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-02 11:07:01 --> Column 'nama_barang' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2309): CodeIgniter\Database\BaseConnection->query('INSERT INTO `barang` (`nama_barang`, `tgl`, `harga_awal`, `deskripsi_barang`) VALUES (:nama_barang:, :tgl:, :harga_awal:, :deskripsi_barang:)', [...], false)
+ 2 APPPATH\Models\M_lelang.php(45): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(113): App\Models\M_lelang->tambah('barang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_t_barang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')

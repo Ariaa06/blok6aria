@@ -1,0 +1,22 @@
+CRITICAL - 2024-02-21 11:37:32 --> Invalid file: "layouts/main.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/main.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/main', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('konsultasi', [], true)
+ 4 APPPATH\Controllers\Home.php(448): view('konsultasi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->konsultasi()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-21 11:40:21 --> Invalid file: "layouts/konsultasi.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/konsultasi.php')
+ 2 SYSTEMPATH\View\View.php(242): CodeIgniter\View\View->render('layouts/konsultasi', [], true)
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('konsultasi', [], true)
+ 4 APPPATH\Controllers\Home.php(448): view('konsultasi', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->konsultasi()
+ 6 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')

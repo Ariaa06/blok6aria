@@ -1,0 +1,104 @@
+ERROR - 2024-02-16 14:21:35 --> mysqli_sql_exception: Table 'twa.barang' doesn't exist in C:\mentalill\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\mentalill\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\mentalill\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\mentalill\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\mentalill\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\mentalill\app\Models\M_lelang.php(76): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\mentalill\app\Controllers\Home.php(433): App\Models\M_lelang->joinnelson('lelang', 'barang', 'petugas', 'masyarakat', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_user=...', 'lelang.id_lelan...')
+#6 C:\mentalill\system\CodeIgniter.php(915): App\Controllers\Home->lelang()
+#7 C:\mentalill\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\mentalill\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\mentalill\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\mentalill\system\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\pu...')
+#11 {main}
+CRITICAL - 2024-02-16 14:21:35 --> Table 'twa.barang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+LEFT JOIN `masyarakat` ON `lelang`.`id_user`=`masyarakat`.`id_user`
+ORDER BY `lelang`.`id_lelang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(76): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(433): App\Models\M_lelang->joinnelson('lelang', 'barang', 'petugas', 'masyarakat', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_user=masyarakat.id_user', 'lelang.id_lelang')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->lelang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-16 14:24:12 --> Undefined property: stdClass::$pengalaman
+in APPPATH\Views\dokter.php on line 42.
+ 1 APPPATH\Views\dokter.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$pengalaman', 'C:\\mentalill\\app\\Views\\dokter.php', 42)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\mentalill\\app\\Views\\dokter.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dokter', [], true)
+ 5 APPPATH\Controllers\Home.php(557): view('dokter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->dokter()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-16 14:24:47 --> Undefined property: stdClass::$id_barang
+in APPPATH\Views\dokter.php on line 47.
+ 1 APPPATH\Views\dokter.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$id_barang', 'C:\\mentalill\\app\\Views\\dokter.php', 47)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\mentalill\\app\\Views\\dokter.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('dokter', [], true)
+ 5 APPPATH\Controllers\Home.php(557): view('dokter', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->dokter()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+ERROR - 2024-02-16 14:41:45 --> mysqli_sql_exception: Table 'twa.barang' doesn't exist in C:\mentalill\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\mentalill\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\mentalill\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\mentalill\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\mentalill\system\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\mentalill\app\Models\M_lelang.php(87): CodeIgniter\Database\BaseBuilder->getWhere(Array)
+#5 C:\mentalill\app\Controllers\Home.php(680): App\Models\M_lelang->joinn('lelang', 'barang', 'petugas', 'masyarakat', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_user=...', 'lelang.id_lelan...', Array)
+#6 C:\mentalill\system\CodeIgniter.php(915): App\Controllers\Home->history()
+#7 C:\mentalill\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\mentalill\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\mentalill\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\mentalill\system\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\pu...')
+#11 {main}
+CRITICAL - 2024-02-16 14:41:45 --> Table 'twa.barang' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1749): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+LEFT JOIN `masyarakat` ON `lelang`.`id_user`=`masyarakat`.`id_user`
+WHERE `status` = :status:
+ORDER BY `lelang`.`id_lelang` DESC', [...], false)
+ 2 APPPATH\Models\M_lelang.php(87): CodeIgniter\Database\BaseBuilder->getWhere([...])
+ 3 APPPATH\Controllers\Home.php(680): App\Models\M_lelang->joinn('lelang', 'barang', 'petugas', 'masyarakat', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_user=masyarakat.id_user', 'lelang.id_lelang', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->history()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-16 15:50:15 --> Class "App\Models\M_Sakit" not found
+in APPPATH\Controllers\Home.php on line 440.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->konsultasi()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-16 15:50:26 --> Class "App\Models\M_Sakit" not found
+in APPPATH\Controllers\Home.php on line 440.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->konsultasi()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+CRITICAL - 2024-02-16 15:50:31 --> Class "App\Models\M_Sakit" not found
+in APPPATH\Controllers\Home.php on line 561.
+ 1 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->dokter()
+ 2 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')

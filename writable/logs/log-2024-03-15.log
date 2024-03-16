@@ -1,0 +1,33 @@
+CRITICAL - 2024-03-15 21:24:33 --> Undefined variable $f
+in APPPATH\Controllers\Home.php on line 238.
+ 1 APPPATH\Controllers\Home.php(238): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $f', 'C:\\mentalill\\app\\Controllers\\Home.php', 238)
+ 2 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_edit_petugas()
+ 3 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+ERROR - 2024-03-15 21:24:59 --> mysqli_sql_exception: Unknown column 'telp' in 'field list' in C:\mentalill\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\mentalill\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE `petugas...', 0)
+#1 C:\mentalill\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `petugas...')
+#2 C:\mentalill\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `petugas...')
+#3 C:\mentalill\system\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `petugas...', Array, false)
+#4 C:\mentalill\app\Models\M_Sakit.php(57): CodeIgniter\Database\BaseBuilder->update(Array, Array)
+#5 C:\mentalill\app\Controllers\Home.php(242): App\Models\M_Sakit->edit('petugas', Array, Array)
+#6 C:\mentalill\system\CodeIgniter.php(915): App\Controllers\Home->aksi_edit_petugas()
+#7 C:\mentalill\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\mentalill\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\mentalill\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\mentalill\system\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\pu...')
+#11 {main}
+CRITICAL - 2024-03-15 21:24:59 --> Unknown column 'telp' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2476): CodeIgniter\Database\BaseConnection->query('UPDATE `petugas` SET `nama_petugas` = :nama_petugas:, `username` = :username:, `password` = :password:, `telp` = :telp:
+WHERE `id_petugas` = :id_petugas:', [...], false)
+ 2 APPPATH\Models\M_Sakit.php(57): CodeIgniter\Database\BaseBuilder->update([...], [...])
+ 3 APPPATH\Controllers\Home.php(242): App\Models\M_Sakit->edit('petugas', [...], [...])
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->aksi_edit_petugas()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')

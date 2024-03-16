@@ -1,0 +1,54 @@
+ERROR - 2024-02-25 13:12:13 --> mysqli_sql_exception: Unknown column 'masyarakat' in 'from clause' in C:\mentalill\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\mentalill\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\mentalill\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\mentalill\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\mentalill\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\mentalill\app\Models\M_Sakit.php(85): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\mentalill\app\Controllers\Home.php(556): App\Models\M_Sakit->joinn('history', 'dokter', 'masyarakat', 'history.id_dokt...', 'history.id_user...', 'history.id_hist...')
+#6 C:\mentalill\system\CodeIgniter.php(915): App\Controllers\Home->history()
+#7 C:\mentalill\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\mentalill\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\mentalill\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\mentalill\system\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\pu...')
+#11 {main}
+CRITICAL - 2024-02-25 13:12:13 --> Unknown column 'masyarakat' in 'from clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `history`
+LEFT JOIN `dokter` USING (`masyarakat`)
+ORDER BY `history`.`id_dokter=dokter`.`id_dokter` DESC', [], false)
+ 2 APPPATH\Models\M_Sakit.php(85): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(556): App\Models\M_Sakit->joinn('history', 'dokter', 'masyarakat', 'history.id_dokter=dokter.id_dokter', 'history.id_user=masyarakat.id_user', 'history.id_history')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->history()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')
+ERROR - 2024-02-25 14:08:58 --> mysqli_sql_exception: Unknown column 'rating.id_petugas' in 'on clause' in C:\mentalill\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\mentalill\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\mentalill\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\mentalill\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\mentalill\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\mentalill\app\Models\M_Sakit.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\mentalill\app\Controllers\Home.php(389): App\Models\M_Sakit->join('rating', 'petugas', 'rating.id_petug...', 'id_rating')
+#6 C:\mentalill\system\CodeIgniter.php(915): App\Controllers\Home->rating()
+#7 C:\mentalill\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\mentalill\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\mentalill\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\mentalill\system\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\pu...')
+#11 {main}
+CRITICAL - 2024-02-25 14:08:58 --> Unknown column 'rating.id_petugas' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `rating`
+LEFT JOIN `petugas` ON `rating`.`id_petugas`=`petugas`.`id_petugas`
+ORDER BY `id_rating` DESC', [], false)
+ 2 APPPATH\Models\M_Sakit.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(389): App\Models\M_Sakit->join('rating', 'petugas', 'rating.id_petugas=petugas.id_petugas', 'id_rating')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->rating()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\mentalill\\public\\index.php')

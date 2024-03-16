@@ -1,0 +1,147 @@
+CRITICAL - 2023-11-14 02:45:45 --> Undefined property: stdClass::$harga_akhirs
+in APPPATH\Views\history.php on line 34.
+ 1 APPPATH\Views\history.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$harga_akhirs', 'C:\\lelang\\app\\Views\\history.php', 34)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\lelang\\app\\Views\\history.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('history', [], true)
+ 5 APPPATH\Controllers\Home.php(582): view('history', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->history()
+ 7 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-14 02:56:46 --> mysqli_sql_exception: Unknown column 'petugas.nama_lengkap' in 'on clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_petug...', 'lelang.id_lelan...')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->lelang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-14 02:56:46 --> Unknown column 'petugas.nama_lengkap' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `masyarakat` ON `lelang`.`id_petugas`=`petugas`.`nama_lengkap`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+ORDER BY `lelang`.`id_lelang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.nama_lengkap', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_lelang')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->lelang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-14 02:57:49 --> mysqli_sql_exception: Unknown column 'petugas.nama_lengkap' in 'on clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_petug...', 'lelang.id_lelan...')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->lelang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-14 02:57:49 --> Unknown column 'petugas.nama_lengkap' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `masyarakat` ON `lelang`.`id_petugas`=`petugas`.`nama_lengkap`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+ORDER BY `lelang`.`id_lelang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.nama_lengkap', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_lelang')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->lelang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-14 03:00:07 --> mysqli_sql_exception: Unknown column 'petugas.id_user' in 'on clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_petug...', 'lelang.id_lelan...')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->lelang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-14 03:00:07 --> Unknown column 'petugas.id_user' in 'on clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `masyarakat` ON `lelang`.`id_petugas`=`petugas`.`id_user`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+ORDER BY `lelang`.`id_lelang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(69): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'masyarakat', 'petugas', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.id_user', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_lelang')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->lelang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-14 03:00:59 --> syntax error, unexpected single-quoted string "lelang"
+in APPPATH\Controllers\Home.php on line 579.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\lelang\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+CRITICAL - 2023-11-14 11:25:30 --> syntax error, unexpected single-quoted string "lelang.id_lelang", expecting ")"
+in APPPATH\Controllers\Home.php on line 355.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\lelang\\app\\Controllers\\Home.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Home')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Home')
+ 4 SYSTEMPATH\CodeIgniter.php(873): class_exists('\\App\\Controllers\\Home', true)
+ 5 SYSTEMPATH\CodeIgniter.php(479): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-14 11:25:41 --> mysqli_sql_exception: Unknown column 'lelang.id_petugas=petugas.nama_lengkap' in 'order clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(68): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'petugas', 'lelang.id_baran...', 'lelang.id_petug...', 'lelang.id_petug...', 'lelang.id_lelan...')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->lelang()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-14 11:25:41 --> Unknown column 'lelang.id_petugas=petugas.nama_lengkap' in 'order clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `lelang`
+LEFT JOIN `barang` ON `lelang`.`id_barang`=`barang`.`id_barang`
+LEFT JOIN `petugas` ON `lelang`.`id_petugas`=`petugas`.`id_petugas`
+ORDER BY `lelang`.`id_petugas=petugas`.`nama_lengkap` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(68): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(355): App\Models\M_lelang->joinnelson('lelang', 'barang', 'petugas', 'lelang.id_barang=barang.id_barang', 'lelang.id_petugas=petugas.id_petugas', 'lelang.id_petugas=petugas.nama_lengkap', 'lelang.id_lelang')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->lelang()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')

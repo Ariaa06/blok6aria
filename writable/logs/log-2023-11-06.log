@@ -1,0 +1,56 @@
+ERROR - 2023-11-06 11:56:34 --> mysqli_sql_exception: Unknown column 'petugas' in 'from clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(529): App\Models\M_lelang->joinaria('history_lelang', 'lelang', 'barang', 'petugas', 'history_lelang....', 'history_lelang....', 'lelang.id_user=...', 'history_lelang....')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->history()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-06 11:56:34 --> Unknown column 'petugas' in 'from clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `history_lelang`
+LEFT JOIN `lelang` USING (`petugas`)
+LEFT JOIN `barang` ON `history_lelang`.`id_lelang`=`lelang`.`id_lelang`
+ORDER BY `history_lelang`.`id_barang=barang`.`id_barang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(529): App\Models\M_lelang->joinaria('history_lelang', 'lelang', 'barang', 'petugas', 'history_lelang.id_lelang=lelang.id_lelang', 'history_lelang.id_barang=barang.id_barang', 'lelang.id_user=masyarakat.id_user', 'history_lelang.id_history')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->history()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
+ERROR - 2023-11-06 11:56:53 --> mysqli_sql_exception: Unknown column 'masyarakat' in 'from clause' in C:\lelang\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\lelang\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\lelang\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\lelang\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\lelang\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\lelang\app\Models\M_lelang.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\lelang\app\Controllers\Home.php(529): App\Models\M_lelang->joinaria('history_lelang', 'lelang', 'barang', 'masyarakat', 'history_lelang....', 'history_lelang....', 'lelang.id_user=...', 'history_lelang....')
+#6 C:\lelang\system\CodeIgniter.php(915): App\Controllers\Home->history()
+#7 C:\lelang\system\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\lelang\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\lelang\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\lelang\system\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\publi...')
+#11 {main}
+CRITICAL - 2023-11-06 11:56:53 --> Unknown column 'masyarakat' in 'from clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `history_lelang`
+LEFT JOIN `lelang` USING (`masyarakat`)
+LEFT JOIN `barang` ON `history_lelang`.`id_lelang`=`lelang`.`id_lelang`
+ORDER BY `history_lelang`.`id_barang=barang`.`id_barang` DESC', [], false)
+ 2 APPPATH\Models\M_lelang.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(529): App\Models\M_lelang->joinaria('history_lelang', 'lelang', 'barang', 'masyarakat', 'history_lelang.id_lelang=lelang.id_lelang', 'history_lelang.id_barang=barang.id_barang', 'lelang.id_user=masyarakat.id_user', 'history_lelang.id_history')
+ 4 SYSTEMPATH\CodeIgniter.php(915): App\Controllers\Home->history()
+ 5 SYSTEMPATH\CodeIgniter.php(492): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\lelang\\public\\index.php')
