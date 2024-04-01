@@ -449,28 +449,30 @@ public function aksi_edit_dokter()
 //booking
 public function booking($id_dokter)
 {
-    
     if (session()->get('level') > 0) {
-        
         $model = new M_Sakit();
         $dokter = $model->find($id_dokter);
 
         if ($dokter) {
+            // Update status dokter menjadi "Booked"
             $data = [
                 'status' => 'Booked',
+                'booking_date' => date('Y-m-d') // Tambahkan tanggal booking
             ];
 
             $model->update($id_dokter, $data);
 
-            return redirect()->to('home/dokter');
+            // Redirect ke halaman dokter dengan pesan sukses
+            return redirect()->to('home/dokter')->with('success', 'Booking successful. Booking Date: ' . date('Y-m-d'));
         } else {
+            // Redirect kembali dengan pesan error jika dokter tidak ditemukan
             return redirect()->back()->with('error', 'Doctor not found.');
         }
     } else {
+        // Redirect ke halaman login jika pengguna tidak memiliki akses
         return redirect()->to('home/login');
     }
 }
-
 public function book()
     {
         if (session()->get('level')>0){
